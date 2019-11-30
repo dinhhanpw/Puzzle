@@ -14,3 +14,13 @@ D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle.exe
 D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle.pdb
 D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\GameConfigDialog.g.cs
 D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\GameConfigDialog.baml
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\ControlzEx.dll
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Fluent.dll
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\ControlzEx.pdb
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\ControlzEx.xml
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Fluent.pdb
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Fluent.xml
+D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.CopyComplete
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\App.baml

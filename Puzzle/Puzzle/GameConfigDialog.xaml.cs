@@ -57,13 +57,13 @@ namespace Puzzle
 
         private void size5Radio_Checked(object sender, RoutedEventArgs e)
         {
-            Size = 10;
+            Size = 5;
         }
 
 
         private void easyGameRadio_Checked(object sender, RoutedEventArgs e)
         {
-            GameTime = new TimeSpan(0, 10, 0);
+            GameTime = new TimeSpan(0, 0, 5);
         }
 
         private void mediumGameRadio_Checked(object sender, RoutedEventArgs e)
@@ -78,6 +78,12 @@ namespace Puzzle
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
+            if(ImagePath == null)
+            {
+                MessageBox.Show("Image must not be null!", "Invalid Value", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+           
             DialogResult = true;
             Close();
         }

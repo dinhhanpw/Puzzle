@@ -3,13 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Fluent="urn:fluent-ribbon"
         xmlns:local="clr-namespace:Puzzle"
         mc:Ignorable="d"
         WindowState="Maximized"
         Loaded="Window_Loaded"
+        KeyUp="Window_KeyUp"
         Title="MainWindow"
-        MouseMove="canvas_MouseMove"
-        MouseLeftButtonUp="canvas_MouseLeftButtonUp">
+      
+        MouseLeftButtonUp="canvas_MouseLeftButtonUp" Background="AliceBlue">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -20,18 +22,44 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.ColumnSpan="2">
-            <MenuItem Header="Game">
-                <MenuItem Header="New" Click="MenuItem_Click"/>
-            </MenuItem>
-        </Menu>
-        <Canvas Grid.Row="1" Grid.RowSpan="2" Name="canvas" MouseLeftButtonDown="canvas_MouseLeftButtonDown">
+        <Fluent:Ribbon Grid.ColumnSpan="2">
+
+            <Fluent:RibbonTabItem Header="Game" Background="AliceBlue">
+                <Fluent:RibbonGroupBox Header="File">
+                    <Fluent:Button Name="newGameButton" Header="New" LargeIcon="Icons/ic_newgame.png"
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" Click="newGame_Click"/>
+                    <Fluent:Button Name="saveGameButton" Header="Save" LargeIcon="Icons/ic_save.png"
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" Click="saveGame_Click"/>
+                    <Fluent:Button Name="loadGameButton" Header="Load" LargeIcon="Icons/ic_load.png"
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" Click="loadGame_Click"/>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="play">
+                    <Fluent:Button Name="playButton" Header="Play" LargeIcon="Icons/ic_play.png" 
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality"
+                                   Click="playGame_Click"/>
+                    <Fluent:Button Name="pauseuButton" Header="Pause" LargeIcon="Icons/ic_pause.png" 
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" 
+                                   Click="pauseGame_Click"/>
+                    <Fluent:Button Name="stopButton" Header="Stop" LargeIcon="Icons/ic_stop.png" 
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" 
+                                   Click="stopGame_Click"/>
+                </Fluent:RibbonGroupBox>
+
+                <Fluent:RibbonGroupBox>
+                    <Fluent:Button Name="undoButton" Header="Undo" LargeIcon="Icons/ic_undo.png"
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" Click="undoButton_Click"/>
+                    <Fluent:Button Name="redoButton" Header="Redo" LargeIcon="Icons/ic_redo.png"
+                                   Margin="2 0" RenderOptions.BitmapScalingMode="HighQuality" Click="redoButton_Click"/>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+        <Canvas Grid.Row="1" Grid.RowSpan="2" Name="canvas" Background="LightGray" MouseLeftButtonDown="canvas_MouseLeftButtonDown">
             
             
         </Canvas>
         <Image Margin="5" Name="sampleImage" Grid.Column="1" Grid.Row="1" Source="sample.jpg" RenderOptions.BitmapScalingMode="HighQuality" />
         <Border Margin="5" Grid.Row="2" Grid.Column="1" BorderBrush="{x:Null}">
-            <TextBlock   Name="stopWatchTextBlock" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock  Name="stopWatchTextBlock" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border> 
     </Grid>
 </Window>

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wp4317866-kimetsu-no-yaiba-wallpapers.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons/ic_newgame.png")]
 
 
