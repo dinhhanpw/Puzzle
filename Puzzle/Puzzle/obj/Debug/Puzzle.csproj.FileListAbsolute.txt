@@ -24,3 +24,7 @@ D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Fluent.xml
 D:\documentfile\WPF\Puzzle\Puzzle\bin\Debug\Microsoft.Xaml.Behaviors.xml
 D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.CopyComplete
 D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\App.baml
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\HighScoreDialog.g.cs
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\HighScoreDialog.baml
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle.csproj.Fody.CopyLocal.cache
+D:\documentfile\WPF\Puzzle\Puzzle\obj\Debug\Puzzle_Content.g.cs

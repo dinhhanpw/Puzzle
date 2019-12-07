@@ -22,15 +22,18 @@ namespace Puzzle
     {
         public int Size { set; get; }
         public String ImagePath { set; get; }
-        public TimeSpan GameTime { set; get; }
+        public TimeSpan DurationGame { set; get; }
         public GameConfigDialog()
         {
             InitializeComponent();
         }
 
+        int minutes;
+        const int MinDuration = 1;
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            size3Radio.IsChecked = true;
         }
 
         private void browerButton_Click(object sender, RoutedEventArgs e)
@@ -48,44 +51,52 @@ namespace Puzzle
         private void size3Radio_Checked(object sender, RoutedEventArgs e)
         {
             Size = 3;
+            minutes = MinDuration;
+            easyGameRadio.IsChecked = true;
         }
 
         private void size4Radio_Checked(object sender, RoutedEventArgs e)
         {
             Size = 4;
+            minutes = MinDuration + 1;
+            easyGameRadio.IsChecked = true;
         }
 
         private void size5Radio_Checked(object sender, RoutedEventArgs e)
         {
             Size = 5;
+            minutes = MinDuration + 2;
+            easyGameRadio.IsChecked = true;
         }
 
 
         private void easyGameRadio_Checked(object sender, RoutedEventArgs e)
         {
-            GameTime = new TimeSpan(0, 0, 5);
+            DurationGame = new TimeSpan(0, minutes + 2, 0);
         }
 
         private void mediumGameRadio_Checked(object sender, RoutedEventArgs e)
         {
-            GameTime = new TimeSpan(0, 8, 0);
+            DurationGame = new TimeSpan(0, minutes + 1, 0);
         }
 
         private void hardGameRadio_Checked(object sender, RoutedEventArgs e)
         {
-            GameTime = new TimeSpan(0, 5, 0);
+            DurationGame = new TimeSpan(0, minutes, 0);
         }
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
-            if(ImagePath == null)
+            if (ImagePath == null)
             {
                 MessageBox.Show("Image must not be null!", "Invalid Value", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-           
+
             DialogResult = true;
             Close();
         }
+
+
     }
 }

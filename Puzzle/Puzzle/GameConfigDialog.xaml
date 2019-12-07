@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Puzzle"
         xmlns:Fluent="urn:fluent-ribbon"
         mc:Ignorable="d"
-       
+       Loaded="Window_Loaded"
         Title="Game Config Dialog" Height="250" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -27,13 +27,13 @@
         </DockPanel>
         <TextBlock Grid.Row="1" Margin="10 5" Text="Size:" HorizontalAlignment="Right"/>
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
-            <RadioButton Name="size3Radio" Margin="10 5" GroupName="sizeBoard" IsChecked="True" Content="3x3" Checked="size3Radio_Checked"/>
+            <RadioButton Name="size3Radio" Margin="10 5" GroupName="sizeBoard" Content="3x3" Checked="size3Radio_Checked"/>
             <RadioButton Name="size4Radio" Margin="10 5" GroupName="sizeBoard" Content="4x4" Checked="size4Radio_Checked"/>
             <RadioButton Name="size5Radio" Margin="10 5" GroupName="sizeBoard" Content="5x5" Checked="size5Radio_Checked"/>
         </StackPanel>
         <TextBlock Grid.Row="2" Margin="10 5" Text="Level Of Difficult:"/>
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
-            <RadioButton Name="easyGameRadio" Margin="10 5" GroupName="difficult" IsChecked="True" Content="Easy" Checked="easyGameRadio_Checked"/>
+            <RadioButton Name="easyGameRadio" Margin="10,0,10,5" GroupName="difficult" Content="Easy" Checked="easyGameRadio_Checked" Height="15.96" VerticalAlignment="Bottom"/>
             <RadioButton Name="mediumGameRadio" Margin="10 5" GroupName="difficult" Content="Medium" Checked="mediumGameRadio_Checked"/>
             <RadioButton Name="hardGameRadio" Margin="10 5" GroupName="difficult" Content="Hard" Checked="hardGameRadio_Checked"/>
         </StackPanel>
