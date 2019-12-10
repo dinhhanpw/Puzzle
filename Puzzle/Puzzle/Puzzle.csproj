@@ -128,9 +128,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="sample.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Icons\ic_play.png" />
     <Resource Include="Icons\ic_save.png" />
   </ItemGroup>
@@ -154,6 +151,8 @@
     <Resource Include="Icons\ic_off.png" />
     <Resource Include="Icons\ic_on.png" />
     <Resource Include="Icons\ic_music.png" />
+    <Resource Include="Icons\ic_puzzle.png" />
+    <Resource Include="Icons\ic_setting.png" />
     <Content Include="Musics\ChinaX.mp3" />
     <Content Include="Musics\Cloud 9.mp3" />
     <Content Include="Musics\Spring.mp3" />

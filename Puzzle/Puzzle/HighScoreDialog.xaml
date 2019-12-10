@@ -8,7 +8,8 @@
         ResizeMode="NoResize"
         Loaded="Window_Loaded"
         Closing="Window_Closing"
-        Title="HighScoreDialog" Height="500" Width="500">
+        Title="HighScore Dialog"
+        Icon="Icons/ic_highscore.png"  Height="400" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
 
@@ -16,14 +17,14 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            
         </Grid.RowDefinitions>
         <ListView Name="highScoreListView">
             <ListView.View>
                 <GridView>
 
-                    <GridViewColumn Header="Name" Width="225"  DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Header="Score" Width="225"  DisplayMemberBinding="{Binding Score}"/>
+                    <GridViewColumn Header="Name" Width="190"  DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Score" Width="185"  DisplayMemberBinding="{Binding Score}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -39,7 +40,7 @@
             </StackPanel.Style>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5" Text="Name:"/>
-                <TextBox Name="namePlayerTextBox" Margin="5" Width="300" />
+                <TextBox Name="namePlayerTextBox" Margin="5" Width="200" />
                 <TextBlock Margin="5" Text="Score:"/>
                 <TextBlock Name="scoreTextBlock" Margin="5" Text="0"/>
             </StackPanel>

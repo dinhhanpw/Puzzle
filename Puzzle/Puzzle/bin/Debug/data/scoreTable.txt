@@ -1,0 +1,11 @@
+10
+My Name|1320
+Smart Player|1240
+Smart Player|1170
+Smart Player|940
+Smart Player|780
+Smart Player|0
+Smart Player|0
+Smart Player|0
+Smart Player|0
+Smart Player|0

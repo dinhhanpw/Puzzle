@@ -7,6 +7,7 @@
         xmlns:Fluent="urn:fluent-ribbon"
         mc:Ignorable="d"
        Loaded="Window_Loaded"
+        Icon="Icons/ic_setting.png"
         Title="Game Config Dialog" Height="250" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>

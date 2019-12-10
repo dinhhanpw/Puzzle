@@ -11,6 +11,7 @@
         Loaded="Window_Loaded"
         KeyUp="Window_KeyUp"
         Title="MainWindow" 
+        Icon="Icons/ic_puzzle.png"
         MouseLeftButtonUp="canvas_MouseLeftButtonUp" Background="CornflowerBlue">
 
     <Grid>
